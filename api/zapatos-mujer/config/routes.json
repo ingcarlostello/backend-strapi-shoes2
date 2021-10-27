@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/zapatos-mujers",
+      "handler": "zapatos-mujer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zapatos-mujers/count",
+      "handler": "zapatos-mujer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zapatos-mujers/:id",
+      "handler": "zapatos-mujer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/zapatos-mujers",
+      "handler": "zapatos-mujer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/zapatos-mujers/:id",
+      "handler": "zapatos-mujer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/zapatos-mujers/:id",
+      "handler": "zapatos-mujer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

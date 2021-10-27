@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "puntaje_zapatos_mujers",
+  "info": {
+    "name": "puntajeZapatosMujer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cantidadEstrellas": {
+      "type": "decimal"
+    },
+    "zapatos_mujer": {
+      "model": "zapatos-mujer",
+      "via": "puntaje_zapatos_mujers"
+    }
+  }
+}

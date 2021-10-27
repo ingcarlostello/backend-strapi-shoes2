@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/zapatos-hombres",
+      "handler": "zapatos-hombre.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zapatos-hombres/count",
+      "handler": "zapatos-hombre.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/zapatos-hombres/:id",
+      "handler": "zapatos-hombre.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/zapatos-hombres",
+      "handler": "zapatos-hombre.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/zapatos-hombres/:id",
+      "handler": "zapatos-hombre.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/zapatos-hombres/:id",
+      "handler": "zapatos-hombre.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

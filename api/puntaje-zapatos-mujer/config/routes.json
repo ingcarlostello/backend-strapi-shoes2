@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/puntaje-zapatos-mujers",
+      "handler": "puntaje-zapatos-mujer.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puntaje-zapatos-mujers/count",
+      "handler": "puntaje-zapatos-mujer.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/puntaje-zapatos-mujers/:id",
+      "handler": "puntaje-zapatos-mujer.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/puntaje-zapatos-mujers",
+      "handler": "puntaje-zapatos-mujer.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/puntaje-zapatos-mujers/:id",
+      "handler": "puntaje-zapatos-mujer.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/puntaje-zapatos-mujers/:id",
+      "handler": "puntaje-zapatos-mujer.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

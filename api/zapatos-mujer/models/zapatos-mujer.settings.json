@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zapatos_mujers",
+  "info": {
+    "name": "Zapatos Mujer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Precio": {
+      "type": "biginteger"
+    },
+    "Puntaje": {
+      "type": "decimal"
+    },
+    "Nombre_Modelo": {
+      "type": "string"
+    },
+    "Foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Descripcion_Producto": {
+      "type": "richtext"
+    },
+    "Resena_Producto": {
+      "type": "string"
+    },
+    "NumerosTallas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tallas-mujer.talla-zapatos-mujer"
+    },
+    "puntaje_zapatos_mujers": {
+      "via": "zapatos_mujer",
+      "collection": "puntaje-zapatos-mujer"
+    }
+  }
+}

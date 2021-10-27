@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sliders_sliders_heroes",
+  "info": {
+    "name": "sliders_hero",
+    "icon": "clone"
+  },
+  "options": {},
+  "attributes": {
+    "slider": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

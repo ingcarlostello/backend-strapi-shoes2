@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_tallas_hombre_tallas_hombres",
+  "info": {
+    "name": "Tallas-Hombre",
+    "icon": "child"
+  },
+  "options": {},
+  "attributes": {
+    "TallasHombre": {
+      "type": "integer"
+    }
+  }
+}

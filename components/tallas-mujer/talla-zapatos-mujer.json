@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_tallas_mujer_talla_zapatos_mujers",
+  "info": {
+    "name": "Talla_Zapatos_Mujer",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "TallasDama": {
+      "type": "integer"
+    }
+  }
+}

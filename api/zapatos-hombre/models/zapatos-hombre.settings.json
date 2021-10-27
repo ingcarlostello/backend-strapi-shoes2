@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "zapatos_hombres",
+  "info": {
+    "name": "Zapatos Hombre",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Precio": {
+      "type": "biginteger"
+    },
+    "Puntaje": {
+      "type": "integer"
+    },
+    "Nombre_Modelo": {
+      "type": "string"
+    },
+    "Foto": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Descripcion_Producto": {
+      "type": "richtext"
+    },
+    "Tallas_Zapatos_Hombre": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tallas-hombre.tallas-hombre"
+    }
+  }
+}
